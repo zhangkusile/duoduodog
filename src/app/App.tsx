@@ -3,7 +3,6 @@ import { motion } from "motion/react";
 import {
   Heart,
   Bone,
-  Fish,
   Star,
   Smile,
   ChevronDown,
@@ -11,12 +10,12 @@ import {
   Coffee,
   Sparkles,
 } from "lucide-react";
+import coverImage from "@/assets/fcbfbcf6dd4e0d5807423837cb3e9d57.jpg";
 import MusicPlayer from "./components/MusicPlayer";
 
-// TODO: 添加新的封面图片、宠物头像和照片墙图片到 src/assets/
-const COVER_IMG = "";
-const TANGYUAN_IMG = "";
-const RICH_IMG = "";
+const COVER_IMG = coverImage;
+import duoduoImage from "@/assets/2e9f66c4591b0077a62ae72f54127790.jpg";
+const DUODUO_IMG = duoduoImage;
 
 const GALLERY_PHOTOS: string[] = [];
 
@@ -48,18 +47,14 @@ function Hero() {
           <h1 className="text-3xl md:text-4xl font-extrabold mb-3 leading-snug tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
             <span className="text-white/90">欢迎成为</span> <br />
             <span className="text-amber-300 inline-block transform hover:scale-105 transition-transform drop-shadow-[0_0_12px_rgba(251,191,36,0.4)]">
-              汤圆
-            </span>
-            <span className="text-white/60 mx-1.5">&</span>
-            <span className="text-sky-300 inline-block transform hover:scale-105 transition-transform drop-shadow-[0_0_12px_rgba(125,211,252,0.4)]">
-              Rich
+              多多
             </span>{" "}
             <br />
             <span className="text-white/90">的好朋友！</span>
           </h1>
 
           <p className="text-sm md:text-base text-white/90 mb-6 font-medium drop-shadow-md max-w-[280px]">
-            高贵长毛布偶奶牛猫与聪明活泼边牧的奇妙相遇。
+            一只超级可爱的边牧小公主，用萌化你的心。
           </p>
 
           <div className="flex items-center">
@@ -69,7 +64,7 @@ function Hero() {
               whileTap={{ scale: 0.95 }}
               className="bg-white text-stone-900 px-5 py-2 rounded-full font-bold text-sm shadow-xl hover:bg-stone-100 transition-colors flex items-center justify-center space-x-2"
             >
-              <span>认识我们</span>
+              <span>认识多多</span>
               <ChevronDown className="w-4 h-4" />
             </motion.button>
           </div>
@@ -235,21 +230,21 @@ function PetProfile({
 function FunFacts() {
   const stories = [
     {
-      title: "跨服聊天的日常",
+      title: "出门就是最开心的事",
       content:
-        "刚认识的时候，Rich每次想找汤圆玩都会做小狗标准的邀请下趴下，这个动作对于汤圆来说是攻击炸毛的意思，所以汤圆一开始会很生气",
+        "多多最喜欢和爸爸妈妈一起出门冒险，不管是公园、海边还是山里，只要能出去玩，尾巴就摇得像螺旋桨一样停不下来！",
       icon: Coffee,
     },
     {
-      title: "交换吃饭（不允许的）",
+      title: "减脂餐大作战",
       content:
-        "汤圆和Rich喜欢吃对方的饭，对自己的饭有的时候不感兴趣，会偷偷的想要吃对方的饭....难道跨物种的饭更香吗？",
+        "姥姥姥爷总是担心多多吃太多，精心准备减脂餐。但多多每次都用水汪汪的大眼睛看着，试图偷偷多吃一口肉肉零食。",
       icon: Bone,
     },
     {
-      title: "暗中观察的保护",
+      title: "撒娇小能手",
       content:
-        "别看汤圆平时很烦Rich，如果Rich不舒服，汤圆总是默默守在Rich不远的高处，他们经常一起在家跑酷！！",
+        "别看多多是聪明的边牧，在家里完全是个撒娇小公主。最擅长的技能就是用无辜脸骗零食，成功率高达百分之百！",
       icon: Camera,
     },
   ];
@@ -267,7 +262,7 @@ function FunFacts() {
             治愈瞬间
           </h2>
           <p className="text-base md:text-xl text-stone-500 max-w-2xl mx-auto">
-            猫狗双全的快乐，都在这些鸡飞狗跳又温馨可爱的日常里。
+            多多的快乐日常，每一天都是温馨可爱的小故事。
           </p>
         </motion.div>
 
@@ -377,13 +372,13 @@ function Footer() {
           很高兴认识你！
         </h2>
         <p className="mb-6 md:mb-8 text-base md:text-lg">
-          感谢你成为汤圆和Rich的互联网好朋友。
+          感谢你成为多多的互联网好朋友。
           <br />
-          希望我们的日常能为你带来一点点温暖和笑容。
+          希望多多的日常能为你带来一点点温暖和笑容。
         </p>
         <div className="inline-flex flex-col sm:flex-row items-center justify-center sm:space-x-2 bg-stone-800 px-5 md:px-6 py-3 rounded-full text-xs sm:text-sm font-medium border border-stone-700">
           <span>
-            © {new Date().getFullYear()} 汤圆 & Rich 的小宇宙
+            © {new Date().getFullYear()} 多多的小宇宙
           </span>
           <span className="hidden sm:inline mx-2">|</span>
           <span>Made with love</span>
@@ -405,51 +400,31 @@ export default function App() {
       >
         <div className="text-center mb-12 md:mb-20">
           <h2 className="text-3xl md:text-5xl font-extrabold text-stone-800 mb-4 font-serif">
-            认识两位小主角
+            认识小主角
           </h2>
           <div className="w-24 h-1 bg-orange-300 mx-auto rounded-full"></div>
         </div>
 
         <PetProfile
-          name="汤圆"
-          title="暴躁大美女"
-          breed="长毛布偶奶牛猫"
-          image={TANGYUAN_IMG}
-          theme="orange"
-          icon={Fish}
-          traits={[
-            "傲娇公主",
-            "隐形话痨",
-            "高冷但粘人",
-            "作息监督员",
-          ]}
-          likes={[
-            "特级猫条",
-            "午后的阳光",
-            "所有的快递纸箱",
-            "高处俯视",
-          ]}
-          story="奶牛警长，每天在家跑酷，进行体能练习。如果Rich惹她不高兴了，会精准使出一招无影猫猫拳，然后跳起来暴揍。不喜欢任何别的猫猫。"
-        />
-
-        <div className="w-full h-px bg-stone-200 my-10"></div>
-
-        <PetProfile
-          name="Rich"
-          title="阳光开朗大美女！"
+          name="多多"
+          title="全世界最可爱的边牧妹妹！"
           breed="边境牧羊犬"
-          image={RICH_IMG}
-          theme="blue"
+          image={DUODUO_IMG}
+          theme="orange"
           icon={Bone}
           traits={[
-            "快乐小狗",
-            "社牛晚期",
-            "精力无限",
-            "超级典型ENFP",
+            "萌妹一枚",
+            "超级可爱",
+            "撒娇达人",
+            "小公主",
           ]}
-          likes={["追飞盘", "草地狂奔", "交新朋友", "贴贴汤圆"]}
-          story="虽然是狗界智商第一的学霸，但在家里总是被汤圆的智商碾压。最擅长的技能是试图用深情狗狗眼对你进行精神控制，以获取更多的零食。总是想和汤圆贴贴，却总是被无情拒绝，但屡战屡败，屡败屡战。"
-          reversed
+          likes={[
+            "和爸爸妈妈出去玩",
+            "各种肉肉零食",
+            "姥姥姥爷的减脂餐",
+            "被全家人宠爱",
+          ]}
+          story="多多是家里的团宠小公主，最喜欢跟着爸爸妈妈到处探险。虽然姥姥姥爷总是给她做减脂餐，但她最爱的还是各种肉肉零食，每次都用无辜的大眼睛成功骗到更多好吃的。"
         />
       </section>
 
