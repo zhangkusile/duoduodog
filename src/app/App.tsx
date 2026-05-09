@@ -17,7 +17,35 @@ const COVER_IMG = coverImage;
 import duoduoImage from "@/assets/2e9f66c4591b0077a62ae72f54127790.jpg";
 const DUODUO_IMG = duoduoImage;
 
-const GALLERY_PHOTOS: string[] = [];
+import g01 from "@/assets/03fb749efbaaf643695c62eaa1ef4cb9.jpg";
+import g02 from "@/assets/0521d8a8da5e6f18876686cc0e89e8ae.jpg";
+import g03 from "@/assets/0a39664d5616003b2f6c0b31d5ea7fcd.jpg";
+import g04 from "@/assets/1c6d1c3bccdf8392876c26291b59c3c9.jpg";
+import g05 from "@/assets/272adbb789a26b88c5bf4b91da74128a.jpg";
+import g06 from "@/assets/4f5b7a7646b2a8a411ae1ab2db70929c.jpg";
+import g07 from "@/assets/5127a8869846e74e3273d2cddb81f475.jpg";
+import g08 from "@/assets/54fc680cf759533af0fc9012a0c96046.jpg";
+import g09 from "@/assets/5dd42b941918917e895cfe3f3193a14b.jpg";
+import g10 from "@/assets/624a4ef7dea5aa7dc1431770e4282847.jpg";
+import g11 from "@/assets/6287a11c9b8638e0e0cb7be1e2203388.jpg";
+import g12 from "@/assets/65ef3dd2880e81520829c1935b9e1073.jpg";
+import g13 from "@/assets/7ecff6a1a13a888af0c22952a1e02e5f.jpg";
+import g14 from "@/assets/7ff473addce481a57b7d518bdf75e4dc.jpg";
+import g15 from "@/assets/925e1e2a50fe9b79100a8c1d3f54fb44.jpg";
+import g16 from "@/assets/93bed08576aca0ea1df094fb4ccb31a0.jpg";
+import g17 from "@/assets/a02fff4df3f4508e8e06654b72a630cc.jpg";
+import g18 from "@/assets/b49e969fdc1550cccae6810d7d574ca5.jpg";
+import g19 from "@/assets/b5cb703ca8662679f41c869c7ad5c989.jpg";
+import g20 from "@/assets/b8b6839e1253ee691673dca77fd8dba3.jpg";
+import g21 from "@/assets/bee43bc6e764a43cf193506f08f336f1.jpg";
+import g22 from "@/assets/c2ede87ed98df0c64632c345e16a58c8.jpg";
+import g23 from "@/assets/f935a6729ca4be4d336942bd32da6728.jpg";
+
+const GALLERY_PHOTOS: string[] = [
+  g01, g02, g03, g04, g05, g06, g07, g08,
+  g09, g10, g11, g12, g13, g14, g15, g16,
+  g17, g18, g19, g20, g21, g22, g23,
+];
 
 function Hero() {
   const scrollToPets = () => {
