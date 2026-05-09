@@ -60,7 +60,7 @@ function Hero() {
         <img
           src={COVER_IMG}
           alt="Tangyuan and Rich"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-bottom"
         />
         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
       </div>
