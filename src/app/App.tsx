@@ -11,62 +11,14 @@ import {
   Coffee,
   Sparkles,
 } from "lucide-react";
-import coverImage from "@/assets/5f2d797d19bb8adf9ac47b1247b4932f29bc7dd3.png";
-import tangyuanImage from "@/assets/tangyuan.jpg";
-import richImage from "@/assets/rich.jpg";
-import photo01 from "@/assets/331a3069fe28f00f88921a02ab5ee875.jpg";
-import photo02 from "@/assets/48c46acd491106e52a57aeedb5cbd9ec.jpg";
-import photo03 from "@/assets/c9208f26f0b2a3a8c46b7cbc8979c551.jpg";
-import photo04 from "@/assets/ef7d1b36acc442cffcad8f69335f963f.jpg";
-import photo05 from "@/assets/f2325b7c82d867f30f168b7cfa4dc304.jpg";
-import photo06 from "@/assets/604d56e4d834afc2813def694aae5f3c.jpg";
-import photo07 from "@/assets/cdd152643157812a80d676d7ae98bca9.jpg";
-import photo08 from "@/assets/d7b1b0ed00a00af6cffcb15325a4d353.jpg";
-import photo09 from "@/assets/8871272ee34479df1e7c86acde35a586.jpg";
-import photo10 from "@/assets/aded5afddae09daa99ef226c67025be8.jpg";
-import photo11 from "@/assets/2606ca93e33ff6e255caa2a1439cb5f1.jpg";
-import photo12 from "@/assets/f191a89994bbfacb991ac26a71fd76d8.jpg";
-import photo13 from "@/assets/1b96bc772a724e2ec4f8aa8e8c2b1b05.jpg";
-import photo14 from "@/assets/b2ead7d3bd10dea7ded999b8e46d1d1e.jpg";
-import photo15 from "@/assets/5ee0f223431f959953a83e43dfd8ebb1.jpg";
-import photo16 from "@/assets/8d10dffeb2b440c5c779cfc46e3ffdb4.jpg";
-import photo17 from "@/assets/06ed7d4269729a7cc9beb2ee5db8e79e.jpg";
-import photo18 from "@/assets/53d15f7a1bc02a6a2ba8d5f6b8f68c7a.jpg";
-import photo19 from "@/assets/72f93e35715b232197feed8d5d33367c.jpg";
-import photo20 from "@/assets/b3abdb66e87f194edd668ed4c1e9bac3.jpg";
-import photo21 from "@/assets/553d34f66553a1ed08e4b26fb3f39766.jpg";
-import photo22 from "@/assets/4afa3ca850723433f7a5b8050fda8e60.jpg";
-import photo23 from "@/assets/b27e3bd45708f38e0cc0899f3783cc95.jpg";
-import photo24 from "@/assets/86a9ca0b6684b929aee5b1cfca20e4f0.jpg";
-import photo25 from "@/assets/e45330f3e88ba23c2e84a90b3b098389.jpg";
-import photo26 from "@/assets/微信图片_20260414112157_186_157.jpg";
-import photo27 from "@/assets/微信图片_20260414112414_187_157.jpg";
-import photo28 from "@/assets/微信图片_20260414112415_188_157.jpg";
-import photo29 from "@/assets/微信图片_20260414112418_189_157.jpg";
-import photo30 from "@/assets/微信图片_20260414112423_190_157.jpg";
-import photo31 from "@/assets/微信图片_20260414112426_191_157.jpg";
-import photo32 from "@/assets/微信图片_20260414112428_192_157.jpg";
-import photo33 from "@/assets/微信图片_20260414112429_193_157.jpg";
-import photo34 from "@/assets/微信图片_20260414112432_194_157.jpg";
-import photo35 from "@/assets/微信图片_20260414112449_195_157.jpg";
-import photo36 from "@/assets/微信图片_20260414112451_196_157.jpg";
-import photo37 from "@/assets/微信图片_20260414112452_197_157.jpg";
 import MusicPlayer from "./components/MusicPlayer";
 
-const TANGYUAN_IMG = tangyuanImage;
-const RICH_IMG = richImage;
-const COVER_IMG = coverImage;
+// TODO: 添加新的封面图片、宠物头像和照片墙图片到 src/assets/
+const COVER_IMG = "";
+const TANGYUAN_IMG = "";
+const RICH_IMG = "";
 
-const GALLERY_PHOTOS = [
-  photo03, photo04, photo06, photo02, photo17,
-  photo01, photo07, photo25, photo09, photo05,
-  photo08, photo21, photo13, photo10, photo23,
-  photo14, photo24, photo11, photo15, photo12,
-  photo16, photo22, photo19, photo18, photo20,
-  photo26, photo27, photo28, photo29, photo30,
-  photo31, photo32, photo33, photo34, photo35,
-  photo36, photo37,
-];
+const GALLERY_PHOTOS: string[] = [];
 
 function Hero() {
   const scrollToPets = () => {
